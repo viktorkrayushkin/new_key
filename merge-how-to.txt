@@ -1,0 +1,175 @@
+viktor@MacBook-Pro-Viktor new_key % ssh-add /Users/viktor/new_key
+Identity added: /Users/viktor/new_key (gokertymgre68@gmail.com)
+viktor@MacBook-Pro-Viktor new_key % ssh -T git@github.com
+Hi viktorkrayushkin! You've successfully authenticated, but GitHub does not provide shell access.
+viktor@MacBook-Pro-Viktor new_key % git fetch
+viktor@MacBook-Pro-Viktor new_key % git log
+commit 5885e4adac3f752e4a02f976c62be51af959c0a8 (HEAD -> krayushkin, origin/krayushkin)
+Author: viktorkrayushkin <gokertymgre68@gmail.com>
+Date:   Tue Mar 15 14:09:51 2022 +0300
+
+    full branch instuchion
+
+commit 3451424db161b675b8025888e58c9096a972ad1f
+Author: viktorkrayushkin <gokertymgre68@gmail.com>
+Date:   Tue Mar 15 14:00:03 2022 +0300
+
+    instruchion mew branch
+
+commit 3a2e12984c45608062652529ad6f19f0f89be00e (origin/master, master)
+Author: viktorkrayushkin <gokertymgre68@gmail.com>
+Date:   Tue Mar 15 13:43:27 2022 +0300
+
+    add file .gitignr and show.py
+
+commit b17efb485cdcd20e7a9de9cae0ef2b3da80a978b
+Author: viktorkrayushkin <gokertymgre68@gmail.com>
+Date:   Tue Mar 15 01:16:22 2022 +0300
+
+...skipping...
+commit 5885e4adac3f752e4a02f976c62be51af959c0a8 (HEAD -> krayushkin, origin/krayushkin)
+Author: viktorkrayushkin <gokertymgre68@gmail.com>
+Date:   Tue Mar 15 14:09:51 2022 +0300
+
+    full branch instuchion
+
+commit 3451424db161b675b8025888e58c9096a972ad1f
+Author: viktorkrayushkin <gokertymgre68@gmail.com>
+Date:   Tue Mar 15 14:00:03 2022 +0300
+
+    instruchion mew branch
+
+commit 3a2e12984c45608062652529ad6f19f0f89be00e (origin/master, master)
+Author: viktorkrayushkin <gokertymgre68@gmail.com>
+Date:   Tue Mar 15 13:43:27 2022 +0300
+
+    add file .gitignr and show.py
+
+commit b17efb485cdcd20e7a9de9cae0ef2b3da80a978b
+Author: viktorkrayushkin <gokertymgre68@gmail.com>
+Date:   Tue Mar 15 01:16:22 2022 +0300
+
+...skipping...
+
+                   SUMMARY OF LESS COMMANDS
+
+      Commands marked with * may be preceded by a number, N.
+      Notes in parentheses indicate the behavior if N is given.
+      A key preceded by a caret indicates the Ctrl key; thus ^K is ctrl-K.
+
+  h  H                 Display this help.
+  q  :q  Q  :Q  ZZ     Exit.
+ ---------------------------------------------------------------------------
+
+                           MOVING
+
+  e  ^E  j  ^N  CR  *  Forward  one line   (or N lines).
+  y  ^Y  k  ^K  ^P  *  Backward one line   (or N lines).
+  f  ^F  ^V  SPACE  *  Forward  one window (or N lines).
+  b  ^B  ESC-v      *  Backward one window (or N lines).
+  z                 *  Forward  one window (and set window to N).
+  w                 *  Backward one window (and set window to N).
+  ESC-SPACE         *  Forward  one window, but don't stop at end-of-file.
+  d  ^D             *  Forward  one half-window (and set half-window to N).
+  u  ^U             *  Backward one half-window (and set half-window to N).
+  ESC-)  RightArrow *  Right one half screen width (or N positions).
+  ESC-(  LeftArrow  *  Left  one half screen width (or N positions).
+  ESC-}  ^RightArrow   Right to last column displayed.
+  ESC-{  ^LeftArrow    Left  to first column.
+  F                    Forward forever; like "tail -f".
+  ESC-F                Like F but stop when search pattern is found.
+  r  ^R  ^L            Repaint screen.
+  R                    Repaint screen, discarding buffered input.
+        ---------------------------------------------------
+        Default "window" is the screen height.
+        Default "half-window" is half of the screen height.
+ ---------------------------------------------------------------------------
+
+                          SEARCHING
+
+  /pattern          *  Search forward for (N-th) matching line.
+  ?pattern          *  Search backward for (N-th) matching line.
+  n                 *  Repeat previous search (for N-th occurrence).
+  N                 *  Repeat previous search in reverse direction.
+  ESC-n             *  Repeat previous search, spanning files.
+  ESC-N             *  Repeat previous search, reverse dir. & spanning files.
+  ESC-u                Undo (toggle) search highlighting.
+  &pattern          *  Display only matching lines
+        ---------------------------------------------------
+HELP -- Press RETURN for more, or q when done...skipping...
+commit 5885e4adac3f752e4a02f976c62be51af959c0a8 (HEAD -> krayushkin, origin/krayushkin)
+Author: viktorkrayushkin <gokertymgre68@gmail.com>
+Date:   Tue Mar 15 14:09:51 2022 +0300
+
+    full branch instuchion
+
+commit 3451424db161b675b8025888e58c9096a972ad1f
+Author: viktorkrayushkin <gokertymgre68@gmail.com>
+Date:   Tue Mar 15 14:00:03 2022 +0300
+
+    instruchion mew branch
+
+commit 3a2e12984c45608062652529ad6f19f0f89be00e (origin/master, master)
+Author: viktorkrayushkin <gokertymgre68@gmail.com>
+Date:   Tue Mar 15 13:43:27 2022 +0300
+
+    add file .gitignr and show.py
+
+commit b17efb485cdcd20e7a9de9cae0ef2b3da80a978b
+Author: viktorkrayushkin <gokertymgre68@gmail.com>
+Date:   Tue Mar 15 01:16:22 2022 +0300
+
+viktor@MacBook-Pro-Viktor new_key % git branch --all
+* krayushkin
+  master
+  remotes/origin/krayushkin
+  remotes/origin/master
+viktor@MacBook-Pro-Viktor new_key % git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+viktor@MacBook-Pro-Viktor new_key % git log
+commit 3a2e12984c45608062652529ad6f19f0f89be00e (HEAD -> master, origin/master)
+Author: viktorkrayushkin <gokertymgre68@gmail.com>
+Date:   Tue Mar 15 13:43:27 2022 +0300
+
+    add file .gitignr and show.py
+
+commit b17efb485cdcd20e7a9de9cae0ef2b3da80a978b
+Author: viktorkrayushkin <gokertymgre68@gmail.com>
+Date:   Tue Mar 15 01:16:22 2022 +0300
+
+    Витяяяяяяяяя яяяяя
+viktor@MacBook-Pro-Viktor new_key % git merge krayushkin
+Updating 3a2e129..5885e4a
+Fast-forward
+ branch-how-to.txt | 52 ++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 52 insertions(+)
+ create mode 100644 branch-how-to.txt
+viktor@MacBook-Pro-Viktor new_key % git log
+commit 5885e4adac3f752e4a02f976c62be51af959c0a8 (HEAD -> master, origin/krayushkin, krayushkin)
+Author: viktorkrayushkin <gokertymgre68@gmail.com>
+Date:   Tue Mar 15 14:09:51 2022 +0300
+
+    full branch instuchion
+
+commit 3451424db161b675b8025888e58c9096a972ad1f
+Author: viktorkrayushkin <gokertymgre68@gmail.com>
+Date:   Tue Mar 15 14:00:03 2022 +0300
+
+    instruchion mew branch
+
+commit 3a2e12984c45608062652529ad6f19f0f89be00e (origin/master)
+Author: viktorkrayushkin <gokertymgre68@gmail.com>
+Date:   Tue Mar 15 13:43:27 2022 +0300
+
+    add file .gitignr and show.py
+
+commit b17efb485cdcd20e7a9de9cae0ef2b3da80a978b
+Author: viktorkrayushkin <gokertymgre68@gmail.com>
+Date:   Tue Mar 15 01:16:22 2022 +0300
+
+viktor@MacBook-Pro-Viktor new_key % git push
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:viktorkrayushkin/new_key.git
+   3a2e129..5885e4a  master -> master
+viktor@MacBook-Pro-Viktor new_key % 
